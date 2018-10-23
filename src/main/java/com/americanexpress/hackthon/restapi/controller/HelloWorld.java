@@ -1,17 +1,19 @@
 package com.americanexpress.hackthon.restapi.controller;
 
-
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.americanexpress.hackthon.restapi.request.PushRequest;
 
 @RestController
 public interface HelloWorld {
-	
+
 	@GetMapping("/sayHello")
-    public String sayHello();
-	
+	public String sayHello();
+
 	@PostMapping("/pushMessage")
-    public void pushMessage();
+	public void pushMessage(@RequestHeader String deviceToken, @RequestBody PushRequest pushRequest);
 }

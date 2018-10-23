@@ -1,4 +1,4 @@
-package com.someshwar.services.server;
+package com.americanexpress.hackthon.restapi.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

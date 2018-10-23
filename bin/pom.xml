@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.someshwar.services</groupId>
-	<artifactId>Hackathon-pushservice</artifactId>
-	<version>0.0.1</version>
+	<groupId>com.americanexpress.hackthon.services</groupId>
+	<artifactId>Hackathon-service</artifactId>
+	<version>0.1.0</version>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -18,12 +18,6 @@
 	</properties>
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/com.notnoop.apns/apns -->
-		<dependency>
-			<groupId>com.notnoop.apns</groupId>
-			<artifactId>apns</artifactId>
-			<version>0.2.3</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -154,10 +148,10 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/target/appBundle</outputDirectory>
+							<outputDirectory>${basedir}/target/appBundle/.openshift</outputDirectory>
 							<resources>
 								<resource>
-									<directory>appBundle</directory>
+									<directory>.openshift</directory>
 									<filtering>false</filtering>
 								</resource>
 							</resources>

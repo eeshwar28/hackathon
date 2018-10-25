@@ -32,8 +32,8 @@ public class HelloWorldController implements HelloWorld{
 			payload.setMutableContent(true);
 			payload.addCategory("PLAIN");
 			
-			payload.addCustomAlertTitle("Peter Sandeaigo Expense Report is Ready");
-			payload.addCustomAlertSubtitle("Peter Sandeaigo Expense Report is Ready");
+			payload.addCustomAlertTitle("Peter's San Diego Expense Report is Ready");
+			payload.addCustomAlertSubtitle("Peter's San Diego Expense Report is Ready");
 			payload.addCustomAlertBody("For your Approval");
 			payload.addCustomDictionary("media-url", url);
 			payload.addCustomDictionary("securityData", securityData);

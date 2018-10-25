@@ -8,7 +8,8 @@ public class PushRequest implements Serializable{
 	public String alertSubTitle;
 	public String alertBody;
 	public String alertattachment;
-	//public String alertTitle;
+	public String securityData;
+	public String accountToken;
 	
 	public String getAlertTitle() {
 		return alertTitle;
@@ -33,6 +34,18 @@ public class PushRequest implements Serializable{
 	}
 	public void setAlertattachment(String alertattachment) {
 		this.alertattachment = alertattachment;
+	}
+	public String getSecurityData() {
+		return securityData;
+	}
+	public void setSecurityData(String securityData) {
+		this.securityData = securityData;
+	}
+	public String getAccountToken() {
+		return accountToken;
+	}
+	public void setAccountToken(String accountToken) {
+		this.accountToken = accountToken;
 	}
 	@Override
 	public String toString() {

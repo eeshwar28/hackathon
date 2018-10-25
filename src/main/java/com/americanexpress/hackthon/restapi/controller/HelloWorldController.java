@@ -37,6 +37,8 @@ public class HelloWorldController implements HelloWorld{
 			payload.addCustomAlertSubtitle(pushRequest.getAlertSubTitle());
 			payload.addCustomAlertBody(pushRequest.getAlertBody());
 			payload.addCustomDictionary("media-url", pushRequest.getAlertattachment());
+			payload.addCustomDictionary("securityData", pushRequest.getSecurityData());
+			payload.addCustomDictionary("account_token", pushRequest.getAccountToken());
 			String token = "DD963D11693C419B3F2CFB7F119F3B1720C046EE43F05CB7A07BDC83B4F4E2E6";
 			try {
 				Push.payload(payload, "./certs/OpenAppDevelopment_exp_3-1-2019_SandboxAPNS.p12", "flower11", false, deviceToken);

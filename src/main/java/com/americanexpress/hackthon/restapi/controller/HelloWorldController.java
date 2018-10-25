@@ -33,8 +33,8 @@ public class HelloWorldController implements HelloWorld{
 			payload.addCategory("PLAIN");
 			
 			payload.addCustomAlertTitle("Peter's San Diego Expense Report is Ready");
-			payload.addCustomAlertSubtitle("Peter's San Diego Expense Report is Ready");
-			payload.addCustomAlertBody("For your Approval");
+			payload.addCustomAlertSubtitle("for your review  and approval");
+			payload.addCustomAlertBody("Next Action -");
 			payload.addCustomDictionary("media-url", url);
 			payload.addCustomDictionary("securityData", securityData);
 			payload.addCustomDictionary("account_token", account_token);

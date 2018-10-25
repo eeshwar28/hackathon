@@ -22,7 +22,7 @@ public class HelloWorldController implements HelloWorld{
 	}
 
 	
-	public void pushMessage(@QueryParam(value = "securityData") String securityData, @QueryParam(value = "accountToken") String accountToken,
+	public void pushMessage(@QueryParam(value = "securityData") String securityData, @QueryParam(value = "account_token") String account_token,
 			@QueryParam(value = "reportid") String reportid, @QueryParam(value = "url") String url) {
 		
 		
@@ -37,7 +37,7 @@ public class HelloWorldController implements HelloWorld{
 			payload.addCustomAlertBody("For your Approval");
 			payload.addCustomDictionary("media-url", url);
 			payload.addCustomDictionary("securityData", securityData);
-			payload.addCustomDictionary("account_token", accountToken);
+			payload.addCustomDictionary("account_token", account_token);
 			payload.addCustomDictionary("reportid", reportid);
 			String token = "DD963D11693C419B3F2CFB7F119F3B1720C046EE43F05CB7A07BDC83B4F4E2E6";
 			try {

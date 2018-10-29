@@ -39,9 +39,9 @@ public class HelloWorldController implements HelloWorld{
 			payload.addCustomDictionary("securityData", securityData);
 			payload.addCustomDictionary("account_token", account_token);
 			payload.addCustomDictionary("reportid", reportid);
-			String token = "DD963D11693C419B3F2CFB7F119F3B1720C046EE43F05CB7A07BDC83B4F4E2E6";
+			String token = "6F771C727AB1476FD2DB197E7598F1993582470354199706293C6995FCC70F59";
 			try {
-				Push.payload(payload, "./certs/OpenAppDevelopment_exp_3-1-2019_SandboxAPNS.p12", "flower11", false, "DD963D11693C419B3F2CFB7F119F3B1720C046EE43F05CB7A07BDC83B4F4E2E6");
+				Push.payload(payload, "./certs/OpenAppDevelopment_exp_3-1-2019_SandboxAPNS.p12", "flower11", false, "6F771C727AB1476FD2DB197E7598F1993582470354199706293C6995FCC70F59");
 			} catch (CommunicationException | KeystoreException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
